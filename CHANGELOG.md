@@ -1,3 +1,18 @@
+### 1.9.0
+
+Add Devise 5 support
+
+Add Rails 8.0 support
+
+Add Ruby 3.4 support
+
+Remove Rails 6.1 support
+
+**Upgrade note:** When upgrading from Devise 4 to Devise 5, existing authentication
+tokens in the database will be invalidated. Devise 5 changed secret key handling to
+exclusively use `app.secret_key_base`, so previously digested tokens will no longer
+match. Plan a re-login flow for users when making this upgrade.
+
 ### 1.8.1
 
 Remove Rails 5.2 and 6.0 support
